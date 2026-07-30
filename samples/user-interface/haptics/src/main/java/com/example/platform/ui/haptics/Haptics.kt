@@ -33,6 +33,8 @@ import com.example.platform.ui.haptics.bounce.BounceRoute
 import com.example.platform.ui.haptics.bounce.BounceViewModel
 import com.example.platform.ui.haptics.expand.ExpandRoute
 import com.example.platform.ui.haptics.expand.ExpandViewModel
+import com.example.platform.ui.haptics.lavabeats.LavaBeatsRoute
+import com.example.platform.ui.haptics.lavabeats.LavaBeatsViewModel
 import com.example.platform.ui.haptics.resist.ResistRoute
 import com.example.platform.ui.haptics.resist.ResistViewModel
 import com.example.platform.ui.haptics.wobble.WobbleRoute
@@ -102,4 +104,14 @@ fun Wobble() {
         factory = WobbleViewModel.provideFactory(application),
     )
     WobbleRoute(viewModel)
+}
+
+@Composable
+fun LavaBeats() {
+    val context = LocalContext.current
+    val application = context.applicationContext as Application
+    val viewModel: LavaBeatsViewModel = viewModel(
+        factory = LavaBeatsViewModel.provideFactory(application),
+    )
+    LavaBeatsRoute(viewModel)
 }
