@@ -112,6 +112,7 @@ import com.example.platform.ui.draganddrop.DragAndDropWithViews
 import com.example.platform.ui.haptics.Bounce
 import com.example.platform.ui.haptics.Expand
 import com.example.platform.ui.haptics.HapticsBasic
+import com.example.platform.ui.haptics.LavaBeats
 import com.example.platform.ui.haptics.Resist
 import com.example.platform.ui.haptics.Wobble
 import com.example.platform.ui.insets.ImmersiveMode
@@ -1054,6 +1055,15 @@ val SAMPLE_DEMOS by lazy {
             apiSurface = UserInterfaceHapticsApiSurface,
             tags = listOf("Haptics"),
             content = { Wobble() },
+        ),
+        ComposableSampleDemo(
+            id = "haptics-6-lavabeats",
+            name = "Haptics - 6. LavaBeats",
+            description = "Demonstrate the complex haptic design of a heartbeat with a lava lamp visualization.",
+            documentation = "https://source.android.com/docs/core/interaction/haptics",
+            apiSurface = UserInterfaceHapticsApiSurface,
+            tags = listOf("Haptics"),
+            content = { LavaBeats() },
         ),
         ComposableSampleDemo(
             id = "live-updates",

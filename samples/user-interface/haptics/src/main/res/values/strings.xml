@@ -43,4 +43,5 @@
     <string name="message_not_supported">Not supported by your current device.</string>
     <string name="wobble">Wobble</string>
     <string name="wobble_drag_and_release">Drag and release</string>
+    <string name="lava_beats">Haptic Heartbeats</string>
 </resources>
